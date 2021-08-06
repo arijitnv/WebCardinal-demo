@@ -84,6 +84,19 @@ export default class OrderController extends WebcController {
             flag = "edit";
         });
 
+        this.onTagClick("delete", (rowModel) => {
+            var orders = JSON.parse(localStorage.getItem("Orders"));
+            for (let i = 0; i < orders.length; i++) {
+                if (orders[i].orderId == rowModel.orderId) {
+                   this.model.orderList.splice(i, 1);
+                    break;
+                }
+            }
+            localStorage.setItem("Orders", JSON.stringify(this.model.orderList));
+
+            flag = "delete";
+        });
+
         function updateRecord(data) {
             var orders = JSON.parse(localStorage.getItem("Orders"));
             for (let i = 0; i < orders.length; i++) {
