@@ -1,0 +1,63 @@
+<webc-container controller="orderController">
+    <link rel="stylesheet" href="../css/style.css">
+    <h2 class="title">Order Management</h2>
+    <div class="container">
+        <div class="orderdetails">
+            <div class="inputbox">
+                <label>{{ @orderId.name }}</label>
+                <input data-view-model=@orderId></input>
+            </div>
+
+            <div class="inputbox">
+                <label>{{ @sponsorId.name }}</label>
+                <input data-view-model=@sponsorId></input>
+            </div>
+
+            <div class="inputbox">
+                <label>{{ @studyId.name }}</label>
+                <input data-view-model=@studyId></input>
+            </div>
+
+            <div class="inputbox">
+                <label>{{ @cmoId.name }}</label>
+                <input data-view-model=@cmoId></input>
+            </div>
+
+            <div class="inputbox">
+                <label>{{ @siteId.name }}</label>
+                <input data-view-model=@siteId></input>
+            </div>
+        </div>
+        &nbsp; <button id="btn" type="submit" data-tag="submit">Submit</button>
+
+    </div>
+
+    <div class="table">
+        <table class="list" id="orderlist">
+            <thead>
+                <tr>
+                    <th>Order Id</th>
+                    <th>Sponsor Id</th>
+                    <th>Study Id</th>
+                    <th>CMO Id</th>
+                    <th>Site Id</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="body" data-for=@orderList>
+                <tr>
+                    <td>{{ @orderId }}</td>
+                    <td>{{ @sponsorId }}</td>
+                    <td>{{ @studyId }}</td>
+                    <td>{{ @cmoId }}</td>
+                    <td>{{ @siteId }}</td>
+                    <td>
+                        <button class="edit" data-tag="edit">Edit</button>
+                        <button class="delete" data-tag="delete">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</webc-container>

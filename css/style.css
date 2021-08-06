@@ -1,0 +1,57 @@
+.title {
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: rgb(135, 172, 250);
+}
+
+.container .orderdetails{
+    margin: 15px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.orderdetails .inputbox {
+    margin: 20px 0px 12px 0;
+    width: calc(100% / 2 - 60px);
+    margin-bottom: 15px;
+}
+
+.container #btn {
+    margin: 15px;
+    transition: hover;
+    align-items: center;
+}
+
+.orderdetails .inputbox input {
+    height: 25px;
+    width: 90%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.list {
+    margin: 20px;
+    width: 85%
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table .list{
+    width: 100%;
+}
+
+td,th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}

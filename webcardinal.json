@@ -1,0 +1,21 @@
+{
+    "theme": "blue-csc-theme",
+    "enableTranslations": "true",
+    "pagesFallbak": {
+        "name": "home"
+    },
+    "pages": [
+        {
+            "name": "home",
+            "path": "./",
+            "src": "home.html",
+            "tag": "home"
+        },
+                {
+            "name": "order",
+            "path": "./order",
+            "src": "order.html",
+            "tag": "order"
+        }
+    ]
+}

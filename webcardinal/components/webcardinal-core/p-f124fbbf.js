@@ -1,0 +1,1 @@
+const a="webcardinal:config:getCoreType",e="webcardinal:config:getDocsSource",n="webcardinal:config:getIdentity",g="webcardinal:config:getLogLevel",c="webcardinal:config:getRouting",i="webcardinal:model:get",t="webcardinal:routing:get",o="webcardinal:tags:get",r="webcardinal:translationModel:get";export{a as E,e as a,n as b,g as c,c as d,i as e,t as f,o as g,r as h}
